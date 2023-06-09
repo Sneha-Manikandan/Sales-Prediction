@@ -1,0 +1,184 @@
+body {
+    font-family: 'Alkalami', serif;
+
+}
+
+.back {
+    height: 130vh;
+    right: 0;
+    width: 65vw;
+    background:  rgb(125, 103, 43) 0%; 
+    width: 100%;
+    color: white;
+}
+
+.container {
+    padding: 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+form {
+    width: 100%;
+    height: 40%;
+}
+h1{
+    color: rgb(125, 103, 43);
+    -webkit-text-stroke: 1px black;
+    font-size: 50px;
+    padding-left: 50px;
+    padding-top: 60px;
+}
+.two-word-heading {
+    text-align: center;
+    padding: 50px;
+
+  }
+  
+  .word-break::before {
+    content: "\A";
+    white-space: pre;
+  }
+  
+.input-card {
+    padding: 3rem;
+    color: black;
+    margin-left: 360px;
+    margin-top: 100px;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    position: fixed;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+    background-color: #ffffff;
+   
+}
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: white;
+    width: 70%;
+}
+
+.forecastImg{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.introsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.introsection div{
+    margin-top: 20px;
+}
+
+.btn-dark{
+    margin-left: 220px;
+    /*background-color: rgba(162, 0, 255, 1);
+    border: 3px solid rgb(246, 246, 246,0.5);*/
+    padding: 20px 15px;
+    border-radius: 20px;
+    background: #000;
+    border:0;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: helvetica;
+    font-size: 12px;
+    letter-spacing: 3px;
+    position: relative;
+    transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+}
+
+.btn-dark::after,
+.btn-dark::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.btn-dark::after {
+    width: 30px;
+    height: 1px;
+    background: white;
+    transform: translateX(-3px);
+    margin-top: 0px;
+}
+
+.btn-dark::before {
+    content: "";
+    transform: rotate(-135deg) translateX(50%);
+    width: 11px;
+    height: 11px;
+    background: transparent;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-top: -1px;
+}
+
+.btn-dark:hover{
+    padding: 15px 60px 15px 20px;
+  }
+  
+.btn-dark:hover::after,
+.btn-dark:hover::before{
+    opacity: 1;
+    right: 15px;
+}
+
+.UploadIcon{
+    width: 6%;
+    height: 6%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.logout-button{
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 20px 30px;
+    color: white;
+    cursor: pointer;
+    background-color: #1f1e1e;
+    border: 3px solid rgb(246, 246, 246, 0.5);
+    padding: 15px 10px;
+    border-radius: 20px;
+    z-index: 9999;
+}
+
+.logout-button:hover {
+    color: #000;
+    background-color: #686464;
+}
